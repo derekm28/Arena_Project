@@ -6,12 +6,16 @@ import SleepPage from './SleepPage';
 import MentalHealthPage from './MentalHealth';
 import HomePage from './HomePage';
 import NavBar from './NavBar';
+import { Routes, Route } from 'react-router-dom';
+
+import Questions from './views/Questions/Questions.js';
 
 function App() {
   return (
-    <div className="App">
-      <NavBar />
-    </div>
+    <Routes>
+      <Route path="/" element={<NavBar/>} />
+      <Route path="/questions" element={<Questions/>} />
+    </Routes>
   );
 }
 
