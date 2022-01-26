@@ -7,6 +7,7 @@ import MentalHealthPage from './MentalHealth';
 import HomePage from './HomePage';
 import NavBar from './NavBar';
 import { Routes, Route } from 'react-router-dom';
+import { makeStyles, ThemeProvider, createTheme } from '@mui/material'
 
 import Questions from './views/Questions/Questions.js';
 
