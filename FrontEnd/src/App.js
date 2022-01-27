@@ -106,7 +106,7 @@ import MainLandingPage from "MainLandingPage.js";
 import ThankYouPage from "ThankYouPage.js";
 import { Routes, Route, Navigate } from "react-router-dom";
 
-import Questions from "views/questions/Questions";
+import Questions from './views/Questions/Questions.js'
 import Signup from "pages/Signup";
 import Login from "pages/Login";
 
