@@ -59,6 +59,18 @@ export default () => {
   const navLinks = [
     <NavLinks key={1}>
       <NavLink href="#">
+        Fitness
+      </NavLink>
+      <NavLink href="#">
+        Nutrition
+      </NavLink>
+      <NavLink href="#">
+        Sleep
+      </NavLink>
+      <NavLink href="#">
+        Mindfulness
+      </NavLink>
+      <NavLink href="#">
         About
       </NavLink>
       <NavLink href="#">

@@ -53,11 +53,10 @@ export default ({ roundedHeaderButton }) => {
         <TwoColumn>
           <LeftColumn>
             <Heading>
-              Beautiful React Templates <span tw="text-primary-500">for you.</span>
+              Choju <span tw="text-primary-500"></span>
             </Heading>
             <Paragraph>
-              Our templates are easy to setup, understand and customize. Fully modular components with a variety of
-              pages and components.
+              The Foundation of your Wellness.
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Your E-mail Address" />

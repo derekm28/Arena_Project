@@ -109,6 +109,11 @@ import { Routes, Route, Navigate } from "react-router-dom";
 import Questions from './views/Questions/Questions.js'
 import Signup from "pages/Signup";
 import Login from "pages/Login";
+import SaaSProductLandingPage from "demos/SaaSProductLandingPage.js";
+import FitnessPage from "pages/FitnessPage.js";
+import NutritionPage from "pages/NutritionPage.js";
+import MindfullnessPage from "pages/MindfullnessPage.js";
+import SleepPage from "pages/SleepPage.js";
 
 export default function App() {
   // If you want to disable the animation just use the disabled `prop` like below on your page's component
@@ -117,10 +122,15 @@ export default function App() {
 
   return (
     <Routes>
+      <Route path="/saasproductlandingpage" element={<SaaSProductLandingPage />} />
       <Route path="/" element={<Navigate to={"/signup"} />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
-      <Route path="/questions" element={<Questions/>} />
+      <Route path="/questions" element={<Questions />} />
+      <Route path="/fitness" element={<FitnessPage />} />
+      <Route path="/nutrition" element={<NutritionPage />} />
+      <Route path="/mindfullness" element={<MindfullnessPage />} />
+      <Route path="/sleep" element={<SleepPage />} />
     </Routes>
   );
 }
