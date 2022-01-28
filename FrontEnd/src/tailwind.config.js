@@ -158,6 +158,7 @@ module.exports = {
         400: '#1f1f1f',
         500: '#fffce5',
         600: '#fff27f',
+        700: '#F6D0C2'
       },
     },
     spacing: {

@@ -10,6 +10,8 @@ import { ReactComponent as SvgDecoratorBlob1 } from "../../images/svg-decorator-
 import DesignIllustration from "../../images/design-illustration-2.svg";
 import CustomersLogoStripImage from "../../images/customers-logo-strip.png";
 
+import video from '../../videos/choju4.mp4';
+
 const Container = tw.div`relative`;
 const TwoColumn = tw.div`flex flex-col lg:flex-row lg:items-center max-w-screen-xl mx-auto py-20 md:py-24`;
 const LeftColumn = tw.div`relative lg:w-5/12 text-center max-w-lg mx-auto lg:max-w-none lg:text-left`;
@@ -63,7 +65,7 @@ export default ({ roundedHeaderButton }) => {
             </Paragraph>
             <Actions>
               <button>Get Started</button>
-              <input type="text" placeholder="Your E-mail Address" style={{display: ""}} />
+              <input type="text" placeholder="Your E-mail Address" style={{ display: "" }} />
             </Actions>
             {/* <CustomersLogoStrip>
               <p>Our TRUSTED Customers</p>
@@ -71,9 +73,10 @@ export default ({ roundedHeaderButton }) => {
             </CustomersLogoStrip> */}
           </LeftColumn>
           <RightColumn>
-            <IllustrationContainer>
-              <img tw="min-w-0 w-full max-w-lg xl:max-w-3xl" src={DesignIllustration} alt="Design Illustration" />
-            </IllustrationContainer>
+            <video autoPlay={true} muted={true} loop={true}   >
+              <source src={video} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
           </RightColumn>
         </TwoColumn>
         <DecoratorBlob1 />
