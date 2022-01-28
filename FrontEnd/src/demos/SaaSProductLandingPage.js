@@ -40,10 +40,10 @@ export default () => {
         imageDecoratorBlob={true}
       />
       <FeatureWithSteps
-        subheading={<Subheading>STEPS</Subheading>}
+        subheading={<Subheading>Health Through</Subheading>}
         heading={
           <>
-            Easy to <HighlightedText>Get Started.</HighlightedText>
+            <HighlightedText>Community</HighlightedText>
           </>
         }
         textOnLeft={false}
