@@ -123,7 +123,7 @@ export default function App() {
   return (
     <Routes>
       <Route path="/saasproductlandingpage" element={<SaaSProductLandingPage />} />
-      <Route path="/" element={<Navigate to={"/signup"} />} />
+      <Route path="/" element={<SaaSProductLandingPage />} />
       <Route path="/signup" element={<Signup />} />
       <Route path="/login" element={<Login />} />
       <Route path="/questions" element={<Questions />} />
