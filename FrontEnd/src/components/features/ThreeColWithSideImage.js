@@ -7,6 +7,7 @@ import { SectionHeading, Subheading as SubheadingBase } from "components/misc/He
 import { SectionDescription } from "components/misc/Typography.js";
 
 import defaultCardImage from "images/shield-icon.svg";
+import * as textConstants from '../../data/textConstants';
 
 import { ReactComponent as SvgDecoratorBlob3 } from "images/svg-decorator-blob-3.svg";
 
@@ -70,14 +71,12 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
   const defaultCards = [
     {
       imageSrc: ShieldIconImage,
-      title: "Secure",
-      description: "We strictly only deal with vendors that provide top notch security."
+      title: "Physical Health",
+      description: textConstants.physicalHealth
     },
-    { imageSrc: SupportIconImage, title: "24/7 Support" },
-    { imageSrc: CustomizeIconImage, title: "Customizable" },
-    { imageSrc: ReliableIconImage, title: "Reliable" },
-    { imageSrc: FastIconImage, title: "Fast" },
-    { imageSrc: SimpleIconImage, title: "Easy" }
+    { imageSrc: SupportIconImage, title: "Nutrition / Diet", description: textConstants.nutritionDiet },
+    { imageSrc: CustomizeIconImage, title: "Mindfulness", description: textConstants.mindfullness },
+    { imageSrc: ReliableIconImage, title: "Sleep", description: textConstants.sleep },
   ];
 
   if (!cards) cards = defaultCards;
