@@ -87,7 +87,7 @@ export default ({ cards = null, heading = "Amazing Features", subheading = "Feat
       <ThreeColumnContainer>
         {subheading && <Subheading>{subheading}</Subheading>}
         <Heading>{heading}</Heading>
-        {description && <Description>{description}</Description>}
+        {description && <Description>{"Following your objectives, we will formulate action plans and reach your goals together. Choju will support you by providing guidance, encouragement and accountability for your health and well-being."}</Description>}
         <VerticalSpacer />
         {cards.map((card, i) => (
           <Column key={i}>

@@ -56,7 +56,10 @@ export default ({ roundedHeaderButton }) => {
               Choju <span tw="text-primary-500"></span>
             </Heading>
             <Paragraph>
-              The Foundation of your Wellness.
+              Your wellness, all in one place
+            </Paragraph>
+            <Paragraph>
+              Our mission is to an all-in-one platform that creates a personalized lifestyle improvement experience catered just for you.
             </Paragraph>
             <Actions>
               <input type="text" placeholder="Your E-mail Address" />
