@@ -100,7 +100,7 @@ export default ({
               <DividerTextContainer>
                 <DividerText>Or Sign in with your e-mail</DividerText>
               </DividerTextContainer>
-              <Form>
+              <Form >
                 <Input type="email" placeholder="Email" />
                 <Input type="password" placeholder="Password" />
                 <SubmitButton type="submit">
