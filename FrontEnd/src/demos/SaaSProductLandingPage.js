@@ -7,6 +7,7 @@ import Features from "components/features/ThreeColWithSideImage.js";
 import MainFeature from "components/features/TwoColWithButton.js";
 import MainFeature2 from "components/features/TwoColWithTwoHorizontalFeaturesAndButton.js";
 import FeatureWithSteps from "components/features/TwoColWithSteps.js";
+import FeatureWithSteps2 from "components/features/CustomTwoColWithSteps.js";
 import Pricing from "components/pricing/ThreePlans.js";
 import Testimonial from "components/testimonials/TwoColumnWithImageAndRating.js";
 import FAQ from "components/faqs/SingleCol.js";
@@ -17,10 +18,15 @@ import macHeroScreenshotImageSrc from "images/hero-screenshot-2.png";
 import prototypeIllustrationImageSrc from "images/prototype-illustration.svg";
 import { ReactComponent as BriefcaseIcon } from "feather-icons/dist/icons/briefcase.svg";
 import { ReactComponent as MoneyIcon } from "feather-icons/dist/icons/dollar-sign.svg";
+import { useState } from "react";
+import { useSelector } from "react-redux";
+
+import Features2 from "components/features/CustomThreeColWithSideImage.js";
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-primary-500`;
   const HighlightedText = tw.span`text-primary-500`;
+  const showText = useSelector(state => state.TemplateReducer.showText)
 
   return (
     <AnimationRevealPage>
@@ -39,7 +45,7 @@ export default () => {
         imageBorder={true}
         imageDecoratorBlob={true}
       />
-      <FeatureWithSteps
+      <FeatureWithSteps2
         subheading={<Subheading>Health Through</Subheading>}
         heading={
           <>
@@ -51,7 +57,15 @@ export default () => {
         imageDecoratorBlob={true}
         decoratorBlobCss={tw`xl:w-40 xl:h-40 opacity-15 -translate-x-1/2 left-1/2`}
       />
-      <MainFeature2
+      {showText && <Features2
+        subheading={<Subheading>Features</Subheading>}
+        heading={
+          <>
+            We have Amazing <HighlightedText>Service.</HighlightedText>
+          </>
+        }
+      />}
+      {/* <MainFeature2
         subheading={<Subheading>VALUES</Subheading>}
         heading={
           <>
@@ -74,8 +88,8 @@ export default () => {
             iconContainerCss: tw`bg-red-300 text-red-800`
           }
         ]}
-      />
-      <Pricing
+      /> */}
+      {/* <Pricing
         subheading={<Subheading>Pricing</Subheading>}
         heading={
           <>
@@ -106,8 +120,8 @@ export default () => {
             features: ["90 Templates", "27 Landing Pages", "37 Internal Pages", "Personal Assistance"]
           }
         ]}
-      />
-      <Testimonial
+      /> */}
+      {/* <Testimonial
         subheading={<Subheading>Testimonials</Subheading>}
         heading={
           <>
@@ -136,8 +150,8 @@ export default () => {
             customerTitle: "Founder, EventsNYC"
           }
         ]}
-      />
-      <FAQ
+      /> */}
+      {/* <FAQ
         subheading={<Subheading>FAQS</Subheading>}
         heading={
           <>
@@ -176,7 +190,7 @@ export default () => {
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
           }
         ]}
-      />
+      /> */}
       <GetStarted/>
       <Footer />
     </AnimationRevealPage>
