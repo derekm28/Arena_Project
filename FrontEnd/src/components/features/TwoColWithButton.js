@@ -46,7 +46,7 @@ export default ({
   subheading = "Our Expertise",
   heading = (
     <>
-      Everything Connected and <span tw="text-primary-500">Sychronized.</span>
+      Everything Connected and <span tw="text-custom-700">Sychronized.</span>
     </>
   ),
   description = textConstants.mainFeature,
