@@ -22,7 +22,6 @@ import { useState } from "react";
 import { useSelector } from "react-redux";
 
 import Features2 from "components/features/CustomThreeColWithSideImage.js";
-import video from '../videos/choju3.mp4';
 
 export default () => {
   const Subheading = tw.span`uppercase tracking-widest font-bold text-custom-700`;
