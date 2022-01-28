@@ -61,7 +61,7 @@ export default ({ roundedHeaderButton }) => {
               Your wellness, all in one place
             </Paragraph>
             <Paragraph>
-              Our mission is to an all-in-one platform that creates a personalized lifestyle improvement experience catered just for you.
+              Our mission is to have an all-in-one platform that creates a personalized lifestyle improvement experience catered just for you.
             </Paragraph>
             <Actions>
               <button>Get Started</button>
